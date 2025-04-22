@@ -1,0 +1,7 @@
+sounddevice
+numpy
+faster-whisper
+torch
+SpeechRecognition
+PyAudio
+ollama

@@ -13,7 +13,7 @@ class RTChatWindow:
         def disable_event(): pass
 
         self.window = tk.Toplevel(parent)
-        self.window.title("Live Chat by Ikmal Said")
+        self.window.title("whisper-twitch-chat (chat) by ikmalsaid")
         self.window.attributes('-topmost', True)
         self.window.geometry("1100x400")
         self.window.configure(bg='#18181b')  # Twitch dark theme
@@ -25,7 +25,7 @@ class RTChatWindow:
 
         # Configure style for dark theme
         style = ttk.Style()
-        style.configure("Chat.Text", background='#0e0e10', foreground='white', font=("Courier New", 12))
+        style.configure("Chat.Text", background='#0e0e10', foreground='white', font=("Segoe UI", 12))
 
         # Create chat display
         self.chat_display = scrolledtext.ScrolledText(
@@ -33,7 +33,7 @@ class RTChatWindow:
             wrap=tk.WORD,
             bg='#0e0e10',
             fg='white',
-            font=("Courier New", 9),
+            font=("Segoe UI", 9),
             height=30
         )
         self.chat_display.pack(fill='both', expand=True)
